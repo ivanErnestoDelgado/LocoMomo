@@ -301,7 +301,7 @@ namespace LocoMomoJuego
         }
         public bool fichasCapturadasEstaVacio() => this.fichasCapturadas.Count == 0;
 
-        public (string, int) devolverDatosJugador() => (this.nombre, this.puntaje);
+        public (string nombre, int puntaje) devolverDatosJugador() => (this.nombre, this.puntaje);
 
         bool posicionCapturaEstaDisponible(int posicion) => posicion<=this.fichasCapturadas.Count && posicion>0;
     }

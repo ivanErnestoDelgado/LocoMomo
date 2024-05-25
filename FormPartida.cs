@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -31,12 +32,14 @@ namespace LocoMomo
         //Variable que guarda la posicion de la ficha capturada seleccionada
         int posicionFichaCapturadaSeleccionada;
 
+        FormPrincipal formPrincipal;
         public FormPartida(string nombreEscogido, FormPrincipal formularioPrincipal)
         {
             InitializeComponent();
             iniciarComponentesPartida(nombreEscogido);
             iniciarComponentesVisuales();
             iniciarFlechasTableroPuntaje();
+            formPrincipal = formularioPrincipal;
         }
         void iniciarComponentesPartida(string nombre) {
             this.jugadorActual = new jugador(nombre);
@@ -45,13 +48,13 @@ namespace LocoMomo
             this.rondaActual = 1;
         }
         void iniciarFlechasTableroPuntaje() {
-            flechasTableroPuntaje = new List<Label> 
-            { 
-                FlechaFila1, 
-                FlechaFila2, 
-                FlechaFila3, 
-                FlechaFila4, 
-                FlechaFila5 
+            flechasTableroPuntaje = new List<Label>
+            {
+                FlechaFila1,
+                FlechaFila2,
+                FlechaFila3,
+                FlechaFila4,
+                FlechaFila5
             };
         }
         void iniciarComponentesVisuales() {
@@ -62,13 +65,13 @@ namespace LocoMomo
             pintarComponentesIniciales();
         }
         void iniciarFichasCapturadasVisual() {
-            fichasCapturadasVisual = new List<Panel> 
-            { 
-                Capturados1, 
-                Capturados2, 
-                Capturados3, 
-                Capturados4, 
-                Capturados5 
+            fichasCapturadasVisual = new List<Panel>
+            {
+                Capturados1,
+                Capturados2,
+                Capturados3,
+                Capturados4,
+                Capturados5
             };
         }
         void iniciarPanelesJugadaCapturaVisual()
@@ -94,11 +97,11 @@ namespace LocoMomo
             };
         }
         void pintarComponentesIniciales() {
-            for (int indice=1;indice<=4;indice++)
+            for (int indice = 1; indice <= 4; indice++)
             {
-                var conjuntoFichas= tableroPrincipalJuego.devolverFicheroEspecificoTablero(indice).devolverFichero();
-                var conjuntoPaneles= tableroPrincipalInterfazVisual[indice - 1];
-                PintarGrupoPaneles(conjuntoFichas,conjuntoPaneles);
+                var conjuntoFichas = tableroPrincipalJuego.devolverFicheroEspecificoTablero(indice).devolverFichero();
+                var conjuntoPaneles = tableroPrincipalInterfazVisual[indice - 1];
+                PintarGrupoPaneles(conjuntoFichas, conjuntoPaneles);
             }
         }
         Bitmap escogerImagenFondo(animales animal) {
@@ -172,7 +175,7 @@ namespace LocoMomo
             int ultimaPosicionAfectada = tableroPrincipalJuego.devolverPosicionUltimoFicheroRecorrido();
             Panel panelVisualFichaEscogida = tableroPrincipalInterfazVisual[indiceFicheroTableroPrincipalEscogido - 1][posicionFichaEscogida - 1];
             mostrarJugadaVisual(panelVisualFichaEscogida, ultimaPosicionAfectada, indiceFicheroTableroPrincipalEscogido, fichasCapturadas.Last());
-            culminarJugada(fichasCapturadas,indiceFicheroTableroPrincipalEscogido,ultimaPosicionAfectada);
+            culminarJugada(fichasCapturadas, indiceFicheroTableroPrincipalEscogido, ultimaPosicionAfectada);
         }
 
         private void culminarJugada(List<fichaAnimal> fichasCapturadas, int indiceFicheroTableroPrincipalEscogido, int ultimaPosicionAfectada)
@@ -180,18 +183,17 @@ namespace LocoMomo
 
             jugadorActual.recibirFichasCaptura(fichasCapturadas);
             rellenarTableroPrincipal(indiceFicheroTableroPrincipalEscogido);
-            mostrarCambiosVisualesJugada(indiceFicheroTableroPrincipalEscogido, ultimaPosicionAfectada);
-            pasarSiguienteRonda();
+            mostrarCambiosVisualesJugada(indiceFicheroTableroPrincipalEscogido, ultimaPosicionAfectada); 
         }
 
-        async void mostrarJugadaVisual(Panel PanelJugada, int ultimaPosicionAfectada,int indiceFicheroTableroPrincipalEscogido, fichaAnimal FichaEscogida) 
+        async void mostrarJugadaVisual(Panel PanelJugada, int ultimaPosicionAfectada, int indiceFicheroTableroPrincipalEscogido, fichaAnimal FichaEscogida)
         {
             DespintarPanelEspecifico(PanelJugada);
             PintarPanelEspecifico(FichaEscogida, panelesJugadaCapturaVisual[ultimaPosicionAfectada - 1]);
             await Task.Delay(1500);
             DespintarPanelEspecifico(panelesJugadaCapturaVisual[ultimaPosicionAfectada - 1]);
             mostrarCambiosVisualesJugada(indiceFicheroTableroPrincipalEscogido, ultimaPosicionAfectada);
-            
+
         }
 
         private async void mostrarCambiosVisualesJugada(int indiceFicheroTableroPrincipalEscogido, int ultimaPosicionRecorrida)
@@ -227,11 +229,21 @@ namespace LocoMomo
         {
             rondaActual++;
             if (rondasMaximasSeSuperaron()) terminarPartida();
+            lblRondaActual.Text = rondaActual.ToString();
         }
 
         private void terminarPartida()
         {
-            throw new NotImplementedException();
+            jugadorActual.asignarPuntajeFinal();
+            var DatosJugador = jugadorActual.devolverDatosJugador();
+            string datosJugadorCadena = DatosJugador.nombre + "-" + DatosJugador.puntaje;
+            MessageBox.Show("Puntaje acumulado: "+DatosJugador.puntaje.ToString(),"Partida Terminada");
+            using (StreamWriter escritor = new StreamWriter("DatosJugadores.txt",true))
+            {
+                escritor.WriteLine(datosJugadorCadena);
+            }
+            formPrincipal.Show();
+            this.Close();
         }
 
         public bool rondasMaximasSeSuperaron() => rondaActual > numeroMaximoRondas;
@@ -245,12 +257,12 @@ namespace LocoMomo
         void intentarJugada(int posicionFichaEscogida, int posicionFicheroEscogida) {
             if (jugadorActual.fichasCapturadasEstaVacio())
                 hacerJugada(posicionFichaEscogida, posicionFicheroEscogida);
-            else MessageBox.Show("Primero Vacia tus fichas capturadas antes de continuar","Advertencia");
+            else MessageBox.Show("Primero Vacia tus fichas capturadas antes de continuar", "Advertencia");
         }
 
         private void P1C1_DoubleClick(object sender, EventArgs e)
         {
-            intentarJugada(1,1);
+            intentarJugada(1, 1);
         }
 
         private void P2C1_DoubleClick(object sender, EventArgs e)
@@ -373,27 +385,48 @@ namespace LocoMomo
             dibujarBorde(this.Capturados5);
         }
 
-        void mostrarCambiosVisualesFilaTableroPuntajes(int filaEscogida) 
+        void mostrarCambiosVisualesFilaTableroPuntajes(int filaEscogida)
         {
-            var fichasFilaEscogida =jugadorActual.devolverTablero().extraerFila(filaEscogida);
-            var panelesFilaEscogida= tableroPuntajeInterfazVisual[filaEscogida - 1];
-            PintarGrupoPaneles(fichasFilaEscogida,panelesFilaEscogida);
+            var fichasFilaEscogida = jugadorActual.devolverTablero().extraerFila(filaEscogida);
+            var panelesFilaEscogida = tableroPuntajeInterfazVisual[filaEscogida - 1];
+            PintarGrupoPaneles(fichasFilaEscogida, panelesFilaEscogida);
+        }
+        void mostrarFlecha(int fila)
+        {
+            var flechaEscogida = flechasTableroPuntaje[fila - 1];
+            flechaEscogida.Visible = true;
         }
         void intentarColocarFichaCapturada(int filaSeleccionada) {
             if (!(posicionFichaCapturadaSeleccionada == -1))
             {
-                jugadorActual.colocarFichaCapturadaATablero(posicionFichaCapturadaSeleccionada, filaSeleccionada);
-                mostrarCambiosVisualesFilaTableroPuntajes(filaSeleccionada);       
+                try {
+                    jugadorActual.colocarFichaCapturadaATablero(posicionFichaCapturadaSeleccionada, filaSeleccionada);
+                    mostrarCambiosVisualesFichasColocadas(filaSeleccionada);
+                    if(jugadorActual.devolverCantidadFichasCapturadas()==0) pasarSiguienteRonda();
+                }
+                catch (posicionNoDisponibleExepcion) {
+                    if (posicionFichaCapturadaSeleccionada > jugadorActual.devolverCantidadFichasCapturadas()) { 
+                    MessageBox.Show("Por favor marque una captura no vacia", "Advertencia");
+                        return;
+                    }
+                    MessageBox.Show("Ya se alcanzaron la maxima cantad de fichas en esta fila", "Advertencia");
+
+                }
             }
         }
+        void mostrarCambiosVisualesFichasColocadas(int fila) {
+            mostrarCambiosVisualesFilaTableroPuntajes(fila);
+            pintarCambiosFichasCaptura(posicionFichaCapturadaSeleccionada);
+            posicionFichaCapturadaSeleccionada = -1;
+        }
+        void pintarCambiosFichasCaptura(int posicion) {
+            var capturas=jugadorActual.devolverConjuntoFichasCapturadas();
+            PintarGrupoPaneles(capturas,fichasCapturadasVisual);
+            fichasCapturadasVisual[posicion - 1].BorderStyle = BorderStyle.None;
+        } 
         private void E1F1Puntaje_Click(object sender, EventArgs e)
         {
-            
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
+            intentarColocarFichaCapturada(1);
         }
 
         void despintarFlechasTableroPuntaje() 
@@ -405,6 +438,77 @@ namespace LocoMomo
         private void FormPartida_MouseEnter(object sender, EventArgs e)
         {
             despintarFlechasTableroPuntaje();
+        }
+
+        private void E1F1Puntaje_MouseLeave(object sender, EventArgs e)
+        {
+            despintarFlechasTableroPuntaje();
+        }
+
+        private void E1F1Puntaje_MouseEnter(object sender, EventArgs e)
+        {
+            if(!(posicionFichaCapturadaSeleccionada == -1))
+                mostrarFlecha(1);
+        }
+
+        private void E1F2Puntaje_Click(object sender, EventArgs e)
+        {
+            intentarColocarFichaCapturada(2);
+        }
+
+        private void E1F2Puntaje_MouseEnter(object sender, EventArgs e)
+        {
+            if (!(posicionFichaCapturadaSeleccionada == -1))
+                mostrarFlecha(2);
+        }
+
+        private void E1F3Puntaje_Click(object sender, EventArgs e)
+        {
+            intentarColocarFichaCapturada(3);
+        }
+
+        private void E1F3Puntaje_MouseEnter(object sender, EventArgs e)
+        {
+            if (!(posicionFichaCapturadaSeleccionada == -1))
+                mostrarFlecha(3);
+        }
+
+        private void E1F4Puntaje_Click(object sender, EventArgs e)
+        {
+            intentarColocarFichaCapturada(4);
+        }
+
+        private void E1F4Puntaje_MouseEnter(object sender, EventArgs e)
+        {
+            if (!(posicionFichaCapturadaSeleccionada == -1))
+                mostrarFlecha(4);
+        }
+
+        private void E1F5Puntaje_Click(object sender, EventArgs e)
+        {   
+
+            intentarColocarFichaCapturada(5);
+        }
+
+        private void E1F5Puntaje_MouseEnter(object sender, EventArgs e)
+        {
+            if (!(posicionFichaCapturadaSeleccionada == -1))
+                mostrarFlecha(5);
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TituloRonda_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblRondaActual_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

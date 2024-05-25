@@ -30,5 +30,10 @@ namespace LocoMomo
             formularioReg.Show();
             this.Hide();
         }
+
+        private void botonSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
