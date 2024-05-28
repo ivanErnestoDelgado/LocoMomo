@@ -41,9 +41,9 @@
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
             this.label1.Location = new System.Drawing.Point(236, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(257, 33);
+            this.label1.Size = new System.Drawing.Size(275, 33);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Top 10 jugadores";
+            this.label1.Text = "Ranking jugadores";
             // 
             // textPuntajes
             // 
