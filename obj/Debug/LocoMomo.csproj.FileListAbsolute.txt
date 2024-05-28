@@ -19,3 +19,5 @@ C:\Users\SADValenz\source\LocoMomo\LocoMomo\obj\Debug\LocoMomo.pdb
 C:\Users\SADValenz\source\LocoMomo\LocoMomo\obj\Debug\LocoMomo.formRegistro.resources
 C:\Users\SADValenz\source\LocoMomo\LocoMomo\obj\Debug\LocoMomo.FormPartida.resources
 C:\Users\SADValenz\source\LocoMomo\LocoMomo\obj\Debug\LocoMomo.FormPrincipal.resources
+C:\Users\SADValenz\source\LocoMomo\LocoMomo\obj\Debug\LocoMomo.formInstrucciones.resources
+C:\Users\SADValenz\source\LocoMomo\LocoMomo\obj\Debug\LocoMomo.formPuntajes.resources

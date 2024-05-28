@@ -37,10 +37,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(24, 9);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.label1.Location = new System.Drawing.Point(-1, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(222, 25);
+            this.label1.Size = new System.Drawing.Size(275, 31);
             this.label1.TabIndex = 0;
             this.label1.Text = "Introduce tu nombre";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -78,6 +80,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::LocoMomo.Properties.Resources.standard_background;
             this.ClientSize = new System.Drawing.Size(271, 197);
             this.ControlBox = false;
             this.Controls.Add(this.botonVolver);
@@ -86,6 +89,7 @@
             this.Controls.Add(this.label1);
             this.Name = "formRegistro";
             this.Text = "Registro";
+            this.Load += new System.EventHandler(this.formRegistro_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

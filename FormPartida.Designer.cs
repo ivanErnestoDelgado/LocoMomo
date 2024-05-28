@@ -94,13 +94,13 @@
             this.label8 = new System.Windows.Forms.Label();
             this.TituloRonda = new System.Windows.Forms.Label();
             this.lblRondaActual = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.imgSalir = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.imgSalir)).BeginInit();
             this.SuspendLayout();
             // 
             // P1C1
             // 
-            this.P1C1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.P1C1.BackColor = System.Drawing.Color.Transparent;
             this.P1C1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.P1C1.Location = new System.Drawing.Point(68, 100);
             this.P1C1.Name = "P1C1";
@@ -110,7 +110,7 @@
             // 
             // P2C1
             // 
-            this.P2C1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.P2C1.BackColor = System.Drawing.Color.Transparent;
             this.P2C1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.P2C1.Location = new System.Drawing.Point(124, 100);
             this.P2C1.Name = "P2C1";
@@ -120,7 +120,7 @@
             // 
             // P3C1
             // 
-            this.P3C1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.P3C1.BackColor = System.Drawing.Color.Transparent;
             this.P3C1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.P3C1.Location = new System.Drawing.Point(68, 156);
             this.P3C1.Name = "P3C1";
@@ -130,7 +130,7 @@
             // 
             // P4C1
             // 
-            this.P4C1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.P4C1.BackColor = System.Drawing.Color.Transparent;
             this.P4C1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.P4C1.Location = new System.Drawing.Point(124, 156);
             this.P4C1.Name = "P4C1";
@@ -140,7 +140,7 @@
             // 
             // P4C3
             // 
-            this.P4C3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.P4C3.BackColor = System.Drawing.Color.Transparent;
             this.P4C3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.P4C3.Location = new System.Drawing.Point(325, 294);
             this.P4C3.Name = "P4C3";
@@ -150,7 +150,7 @@
             // 
             // P4C4
             // 
-            this.P4C4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.P4C4.BackColor = System.Drawing.Color.Transparent;
             this.P4C4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.P4C4.Location = new System.Drawing.Point(124, 294);
             this.P4C4.Name = "P4C4";
@@ -160,7 +160,7 @@
             // 
             // P3C3
             // 
-            this.P3C3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.P3C3.BackColor = System.Drawing.Color.Transparent;
             this.P3C3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.P3C3.Location = new System.Drawing.Point(269, 294);
             this.P3C3.Name = "P3C3";
@@ -170,7 +170,7 @@
             // 
             // P3C4
             // 
-            this.P3C4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.P3C4.BackColor = System.Drawing.Color.Transparent;
             this.P3C4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.P3C4.Location = new System.Drawing.Point(68, 294);
             this.P3C4.Name = "P3C4";
@@ -180,7 +180,7 @@
             // 
             // P2C3
             // 
-            this.P2C3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.P2C3.BackColor = System.Drawing.Color.Transparent;
             this.P2C3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.P2C3.Location = new System.Drawing.Point(325, 238);
             this.P2C3.Name = "P2C3";
@@ -190,7 +190,7 @@
             // 
             // P2C4
             // 
-            this.P2C4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.P2C4.BackColor = System.Drawing.Color.Transparent;
             this.P2C4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.P2C4.Location = new System.Drawing.Point(124, 238);
             this.P2C4.Name = "P2C4";
@@ -200,7 +200,7 @@
             // 
             // P1C4
             // 
-            this.P1C4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.P1C4.BackColor = System.Drawing.Color.Transparent;
             this.P1C4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.P1C4.Location = new System.Drawing.Point(68, 238);
             this.P1C4.Name = "P1C4";
@@ -210,7 +210,7 @@
             // 
             // CapturaC2
             // 
-            this.CapturaC2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.CapturaC2.BackColor = System.Drawing.Color.Transparent;
             this.CapturaC2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.CapturaC2.Location = new System.Drawing.Point(381, 156);
             this.CapturaC2.Name = "CapturaC2";
@@ -219,7 +219,7 @@
             // 
             // CapturaC1
             // 
-            this.CapturaC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.CapturaC1.BackColor = System.Drawing.Color.Transparent;
             this.CapturaC1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.CapturaC1.Location = new System.Drawing.Point(180, 156);
             this.CapturaC1.Name = "CapturaC1";
@@ -228,7 +228,7 @@
             // 
             // CapturaC4
             // 
-            this.CapturaC4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.CapturaC4.BackColor = System.Drawing.Color.Transparent;
             this.CapturaC4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.CapturaC4.Location = new System.Drawing.Point(180, 294);
             this.CapturaC4.Name = "CapturaC4";
@@ -237,7 +237,7 @@
             // 
             // CapturaC3
             // 
-            this.CapturaC3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.CapturaC3.BackColor = System.Drawing.Color.Transparent;
             this.CapturaC3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.CapturaC3.Location = new System.Drawing.Point(381, 294);
             this.CapturaC3.Name = "CapturaC3";
@@ -246,7 +246,7 @@
             // 
             // Capturados2
             // 
-            this.Capturados2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.Capturados2.BackColor = System.Drawing.Color.Transparent;
             this.Capturados2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Capturados2.Location = new System.Drawing.Point(397, 415);
             this.Capturados2.Name = "Capturados2";
@@ -256,7 +256,7 @@
             // 
             // Capturados1
             // 
-            this.Capturados1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.Capturados1.BackColor = System.Drawing.Color.Transparent;
             this.Capturados1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Capturados1.Location = new System.Drawing.Point(341, 415);
             this.Capturados1.Name = "Capturados1";
@@ -266,7 +266,7 @@
             // 
             // Capturados3
             // 
-            this.Capturados3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.Capturados3.BackColor = System.Drawing.Color.Transparent;
             this.Capturados3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Capturados3.Location = new System.Drawing.Point(453, 415);
             this.Capturados3.Name = "Capturados3";
@@ -276,7 +276,7 @@
             // 
             // Capturados4
             // 
-            this.Capturados4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.Capturados4.BackColor = System.Drawing.Color.Transparent;
             this.Capturados4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Capturados4.Location = new System.Drawing.Point(509, 415);
             this.Capturados4.Name = "Capturados4";
@@ -286,7 +286,7 @@
             // 
             // Capturados5
             // 
-            this.Capturados5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.Capturados5.BackColor = System.Drawing.Color.Transparent;
             this.Capturados5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Capturados5.Location = new System.Drawing.Point(565, 415);
             this.Capturados5.Name = "Capturados5";
@@ -296,8 +296,9 @@
             // 
             // E2F2Puntaje
             // 
-            this.E2F2Puntaje.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.E2F2Puntaje.BackColor = System.Drawing.Color.Transparent;
             this.E2F2Puntaje.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.E2F2Puntaje.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.E2F2Puntaje.Location = new System.Drawing.Point(640, 136);
             this.E2F2Puntaje.Name = "E2F2Puntaje";
             this.E2F2Puntaje.Size = new System.Drawing.Size(50, 50);
@@ -308,8 +309,9 @@
             // 
             // E1F2Puntaje
             // 
-            this.E1F2Puntaje.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.E1F2Puntaje.BackColor = System.Drawing.Color.Transparent;
             this.E1F2Puntaje.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.E1F2Puntaje.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.E1F2Puntaje.Location = new System.Drawing.Point(581, 136);
             this.E1F2Puntaje.Name = "E1F2Puntaje";
             this.E1F2Puntaje.Size = new System.Drawing.Size(50, 50);
@@ -320,8 +322,9 @@
             // 
             // E2F1Puntaje
             // 
-            this.E2F1Puntaje.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.E2F1Puntaje.BackColor = System.Drawing.Color.Transparent;
             this.E2F1Puntaje.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.E2F1Puntaje.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.E2F1Puntaje.Location = new System.Drawing.Point(640, 80);
             this.E2F1Puntaje.Name = "E2F1Puntaje";
             this.E2F1Puntaje.Size = new System.Drawing.Size(50, 50);
@@ -332,8 +335,9 @@
             // 
             // E1F1Puntaje
             // 
-            this.E1F1Puntaje.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.E1F1Puntaje.BackColor = System.Drawing.Color.Transparent;
             this.E1F1Puntaje.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.E1F1Puntaje.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.E1F1Puntaje.Location = new System.Drawing.Point(581, 80);
             this.E1F1Puntaje.Name = "E1F1Puntaje";
             this.E1F1Puntaje.Size = new System.Drawing.Size(50, 50);
@@ -344,8 +348,9 @@
             // 
             // E2F4Puntaje
             // 
-            this.E2F4Puntaje.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.E2F4Puntaje.BackColor = System.Drawing.Color.Transparent;
             this.E2F4Puntaje.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.E2F4Puntaje.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.E2F4Puntaje.Location = new System.Drawing.Point(640, 248);
             this.E2F4Puntaje.Name = "E2F4Puntaje";
             this.E2F4Puntaje.Size = new System.Drawing.Size(50, 50);
@@ -356,8 +361,9 @@
             // 
             // E1F4Puntaje
             // 
-            this.E1F4Puntaje.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.E1F4Puntaje.BackColor = System.Drawing.Color.Transparent;
             this.E1F4Puntaje.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.E1F4Puntaje.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.E1F4Puntaje.Location = new System.Drawing.Point(581, 248);
             this.E1F4Puntaje.Name = "E1F4Puntaje";
             this.E1F4Puntaje.Size = new System.Drawing.Size(50, 50);
@@ -368,8 +374,9 @@
             // 
             // E2F3Puntaje
             // 
-            this.E2F3Puntaje.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.E2F3Puntaje.BackColor = System.Drawing.Color.Transparent;
             this.E2F3Puntaje.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.E2F3Puntaje.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.E2F3Puntaje.Location = new System.Drawing.Point(640, 192);
             this.E2F3Puntaje.Name = "E2F3Puntaje";
             this.E2F3Puntaje.Size = new System.Drawing.Size(50, 50);
@@ -380,8 +387,9 @@
             // 
             // E1F3Puntaje
             // 
-            this.E1F3Puntaje.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.E1F3Puntaje.BackColor = System.Drawing.Color.Transparent;
             this.E1F3Puntaje.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.E1F3Puntaje.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.E1F3Puntaje.Location = new System.Drawing.Point(581, 192);
             this.E1F3Puntaje.Name = "E1F3Puntaje";
             this.E1F3Puntaje.Size = new System.Drawing.Size(50, 50);
@@ -392,8 +400,9 @@
             // 
             // E2F5Puntaje
             // 
-            this.E2F5Puntaje.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.E2F5Puntaje.BackColor = System.Drawing.Color.Transparent;
             this.E2F5Puntaje.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.E2F5Puntaje.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.E2F5Puntaje.Location = new System.Drawing.Point(640, 304);
             this.E2F5Puntaje.Name = "E2F5Puntaje";
             this.E2F5Puntaje.Size = new System.Drawing.Size(50, 50);
@@ -404,8 +413,9 @@
             // 
             // E1F5Puntaje
             // 
-            this.E1F5Puntaje.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.E1F5Puntaje.BackColor = System.Drawing.Color.Transparent;
             this.E1F5Puntaje.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.E1F5Puntaje.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.E1F5Puntaje.Location = new System.Drawing.Point(581, 304);
             this.E1F5Puntaje.Name = "E1F5Puntaje";
             this.E1F5Puntaje.Size = new System.Drawing.Size(50, 50);
@@ -416,8 +426,9 @@
             // 
             // E4F5Puntaje
             // 
-            this.E4F5Puntaje.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.E4F5Puntaje.BackColor = System.Drawing.Color.Transparent;
             this.E4F5Puntaje.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.E4F5Puntaje.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.E4F5Puntaje.Location = new System.Drawing.Point(752, 304);
             this.E4F5Puntaje.Name = "E4F5Puntaje";
             this.E4F5Puntaje.Size = new System.Drawing.Size(50, 50);
@@ -428,8 +439,9 @@
             // 
             // E3F5Puntaje
             // 
-            this.E3F5Puntaje.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.E3F5Puntaje.BackColor = System.Drawing.Color.Transparent;
             this.E3F5Puntaje.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.E3F5Puntaje.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.E3F5Puntaje.Location = new System.Drawing.Point(696, 304);
             this.E3F5Puntaje.Name = "E3F5Puntaje";
             this.E3F5Puntaje.Size = new System.Drawing.Size(50, 50);
@@ -440,8 +452,9 @@
             // 
             // E4F4Puntaje
             // 
-            this.E4F4Puntaje.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.E4F4Puntaje.BackColor = System.Drawing.Color.Transparent;
             this.E4F4Puntaje.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.E4F4Puntaje.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.E4F4Puntaje.Location = new System.Drawing.Point(752, 248);
             this.E4F4Puntaje.Name = "E4F4Puntaje";
             this.E4F4Puntaje.Size = new System.Drawing.Size(50, 50);
@@ -452,8 +465,9 @@
             // 
             // E4F2Puntaje
             // 
-            this.E4F2Puntaje.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.E4F2Puntaje.BackColor = System.Drawing.Color.Transparent;
             this.E4F2Puntaje.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.E4F2Puntaje.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.E4F2Puntaje.Location = new System.Drawing.Point(752, 136);
             this.E4F2Puntaje.Name = "E4F2Puntaje";
             this.E4F2Puntaje.Size = new System.Drawing.Size(50, 50);
@@ -464,8 +478,9 @@
             // 
             // E3F4Puntaje
             // 
-            this.E3F4Puntaje.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.E3F4Puntaje.BackColor = System.Drawing.Color.Transparent;
             this.E3F4Puntaje.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.E3F4Puntaje.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.E3F4Puntaje.Location = new System.Drawing.Point(696, 248);
             this.E3F4Puntaje.Name = "E3F4Puntaje";
             this.E3F4Puntaje.Size = new System.Drawing.Size(50, 50);
@@ -476,8 +491,9 @@
             // 
             // E3F2Puntaje
             // 
-            this.E3F2Puntaje.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.E3F2Puntaje.BackColor = System.Drawing.Color.Transparent;
             this.E3F2Puntaje.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.E3F2Puntaje.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.E3F2Puntaje.Location = new System.Drawing.Point(696, 136);
             this.E3F2Puntaje.Name = "E3F2Puntaje";
             this.E3F2Puntaje.Size = new System.Drawing.Size(50, 50);
@@ -488,8 +504,9 @@
             // 
             // E4F3Puntaje
             // 
-            this.E4F3Puntaje.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.E4F3Puntaje.BackColor = System.Drawing.Color.Transparent;
             this.E4F3Puntaje.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.E4F3Puntaje.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.E4F3Puntaje.Location = new System.Drawing.Point(752, 192);
             this.E4F3Puntaje.Name = "E4F3Puntaje";
             this.E4F3Puntaje.Size = new System.Drawing.Size(50, 50);
@@ -500,8 +517,9 @@
             // 
             // E3F3Puntaje
             // 
-            this.E3F3Puntaje.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.E3F3Puntaje.BackColor = System.Drawing.Color.Transparent;
             this.E3F3Puntaje.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.E3F3Puntaje.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.E3F3Puntaje.Location = new System.Drawing.Point(696, 192);
             this.E3F3Puntaje.Name = "E3F3Puntaje";
             this.E3F3Puntaje.Size = new System.Drawing.Size(50, 50);
@@ -512,8 +530,9 @@
             // 
             // E4F1Puntaje
             // 
-            this.E4F1Puntaje.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.E4F1Puntaje.BackColor = System.Drawing.Color.Transparent;
             this.E4F1Puntaje.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.E4F1Puntaje.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.E4F1Puntaje.Location = new System.Drawing.Point(752, 80);
             this.E4F1Puntaje.Name = "E4F1Puntaje";
             this.E4F1Puntaje.Size = new System.Drawing.Size(50, 50);
@@ -524,8 +543,9 @@
             // 
             // E3F1Puntaje
             // 
-            this.E3F1Puntaje.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.E3F1Puntaje.BackColor = System.Drawing.Color.Transparent;
             this.E3F1Puntaje.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.E3F1Puntaje.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.E3F1Puntaje.Location = new System.Drawing.Point(696, 80);
             this.E3F1Puntaje.Name = "E3F1Puntaje";
             this.E3F1Puntaje.Size = new System.Drawing.Size(50, 50);
@@ -536,8 +556,9 @@
             // 
             // E5F5Puntaje
             // 
-            this.E5F5Puntaje.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.E5F5Puntaje.BackColor = System.Drawing.Color.Transparent;
             this.E5F5Puntaje.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.E5F5Puntaje.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.E5F5Puntaje.Location = new System.Drawing.Point(808, 304);
             this.E5F5Puntaje.Name = "E5F5Puntaje";
             this.E5F5Puntaje.Size = new System.Drawing.Size(50, 50);
@@ -548,8 +569,9 @@
             // 
             // E5F4Puntaje
             // 
-            this.E5F4Puntaje.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.E5F4Puntaje.BackColor = System.Drawing.Color.Transparent;
             this.E5F4Puntaje.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.E5F4Puntaje.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.E5F4Puntaje.Location = new System.Drawing.Point(808, 248);
             this.E5F4Puntaje.Name = "E5F4Puntaje";
             this.E5F4Puntaje.Size = new System.Drawing.Size(50, 50);
@@ -560,8 +582,9 @@
             // 
             // E5F2Puntaje
             // 
-            this.E5F2Puntaje.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.E5F2Puntaje.BackColor = System.Drawing.Color.Transparent;
             this.E5F2Puntaje.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.E5F2Puntaje.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.E5F2Puntaje.Location = new System.Drawing.Point(808, 136);
             this.E5F2Puntaje.Name = "E5F2Puntaje";
             this.E5F2Puntaje.Size = new System.Drawing.Size(50, 50);
@@ -572,8 +595,9 @@
             // 
             // E5F3Puntaje
             // 
-            this.E5F3Puntaje.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.E5F3Puntaje.BackColor = System.Drawing.Color.Transparent;
             this.E5F3Puntaje.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.E5F3Puntaje.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.E5F3Puntaje.Location = new System.Drawing.Point(808, 192);
             this.E5F3Puntaje.Name = "E5F3Puntaje";
             this.E5F3Puntaje.Size = new System.Drawing.Size(50, 50);
@@ -584,8 +608,9 @@
             // 
             // E5F1Puntaje
             // 
-            this.E5F1Puntaje.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.E5F1Puntaje.BackColor = System.Drawing.Color.Transparent;
             this.E5F1Puntaje.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.E5F1Puntaje.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.E5F1Puntaje.Location = new System.Drawing.Point(808, 80);
             this.E5F1Puntaje.Name = "E5F1Puntaje";
             this.E5F1Puntaje.Size = new System.Drawing.Size(50, 50);
@@ -597,36 +622,42 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(109, 41);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.label1.Location = new System.Drawing.Point(100, 55);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(191, 25);
+            this.label1.Size = new System.Drawing.Size(234, 31);
             this.label1.TabIndex = 41;
             this.label1.Text = "Tablero Principal";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.label2.Location = new System.Drawing.Point(607, 41);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(210, 25);
+            this.label2.Size = new System.Drawing.Size(257, 31);
             this.label2.TabIndex = 42;
             this.label2.Text = "Tablero de puntaje";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(376, 378);
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.label3.Location = new System.Drawing.Point(333, 375);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(210, 25);
+            this.label3.Size = new System.Drawing.Size(305, 37);
             this.label3.TabIndex = 43;
             this.label3.Text = "Fichas Capturadas";
             // 
             // P4C2
             // 
-            this.P4C2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.P4C2.BackColor = System.Drawing.Color.Transparent;
             this.P4C2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.P4C2.Location = new System.Drawing.Point(325, 156);
             this.P4C2.Name = "P4C2";
@@ -636,7 +667,7 @@
             // 
             // P3C2
             // 
-            this.P3C2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.P3C2.BackColor = System.Drawing.Color.Transparent;
             this.P3C2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.P3C2.Location = new System.Drawing.Point(269, 156);
             this.P3C2.Name = "P3C2";
@@ -646,7 +677,7 @@
             // 
             // P2C2
             // 
-            this.P2C2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.P2C2.BackColor = System.Drawing.Color.Transparent;
             this.P2C2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.P2C2.Location = new System.Drawing.Point(325, 100);
             this.P2C2.Name = "P2C2";
@@ -657,7 +688,7 @@
             // 
             // P1C3
             // 
-            this.P1C3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.P1C3.BackColor = System.Drawing.Color.Transparent;
             this.P1C3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.P1C3.Location = new System.Drawing.Point(269, 238);
             this.P1C3.Name = "P1C3";
@@ -667,7 +698,7 @@
             // 
             // P1C2
             // 
-            this.P1C2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.P1C2.BackColor = System.Drawing.Color.Transparent;
             this.P1C2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.P1C2.Location = new System.Drawing.Point(269, 100);
             this.P1C2.Name = "P1C2";
@@ -680,64 +711,75 @@
             this.FlechaFila1.AutoSize = true;
             this.FlechaFila1.BackColor = System.Drawing.Color.Transparent;
             this.FlechaFila1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FlechaFila1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.FlechaFila1.Location = new System.Drawing.Point(528, 80);
             this.FlechaFila1.Name = "FlechaFila1";
             this.FlechaFila1.Size = new System.Drawing.Size(48, 42);
             this.FlechaFila1.TabIndex = 44;
             this.FlechaFila1.Text = "➝";
+            this.FlechaFila1.Visible = false;
             // 
             // FlechaFila2
             // 
             this.FlechaFila2.AutoSize = true;
             this.FlechaFila2.BackColor = System.Drawing.Color.Transparent;
             this.FlechaFila2.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FlechaFila2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.FlechaFila2.Location = new System.Drawing.Point(528, 136);
             this.FlechaFila2.Name = "FlechaFila2";
             this.FlechaFila2.Size = new System.Drawing.Size(48, 42);
             this.FlechaFila2.TabIndex = 45;
             this.FlechaFila2.Text = "➝";
+            this.FlechaFila2.Visible = false;
             // 
             // FlechaFila3
             // 
             this.FlechaFila3.AutoSize = true;
             this.FlechaFila3.BackColor = System.Drawing.Color.Transparent;
             this.FlechaFila3.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FlechaFila3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.FlechaFila3.Location = new System.Drawing.Point(528, 192);
             this.FlechaFila3.Name = "FlechaFila3";
             this.FlechaFila3.Size = new System.Drawing.Size(48, 42);
             this.FlechaFila3.TabIndex = 46;
             this.FlechaFila3.Text = "➝";
+            this.FlechaFila3.Visible = false;
             // 
             // FlechaFila4
             // 
             this.FlechaFila4.AutoSize = true;
             this.FlechaFila4.BackColor = System.Drawing.Color.Transparent;
             this.FlechaFila4.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FlechaFila4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.FlechaFila4.Location = new System.Drawing.Point(528, 248);
             this.FlechaFila4.Name = "FlechaFila4";
             this.FlechaFila4.Size = new System.Drawing.Size(48, 42);
             this.FlechaFila4.TabIndex = 47;
             this.FlechaFila4.Text = "➝";
+            this.FlechaFila4.Visible = false;
             // 
             // FlechaFila5
             // 
             this.FlechaFila5.AutoSize = true;
             this.FlechaFila5.BackColor = System.Drawing.Color.Transparent;
             this.FlechaFila5.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FlechaFila5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.FlechaFila5.Location = new System.Drawing.Point(528, 308);
             this.FlechaFila5.Name = "FlechaFila5";
             this.FlechaFila5.Size = new System.Drawing.Size(48, 42);
             this.FlechaFila5.TabIndex = 48;
             this.FlechaFila5.Text = "➝";
+            this.FlechaFila5.Visible = false;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label4.Location = new System.Drawing.Point(864, 311);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(33, 33);
+            this.label4.Size = new System.Drawing.Size(41, 42);
             this.label4.TabIndex = 49;
             this.label4.Text = "≠";
             // 
@@ -745,10 +787,11 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(864, 257);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label5.Location = new System.Drawing.Point(863, 254);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(33, 33);
+            this.label5.Size = new System.Drawing.Size(41, 42);
             this.label5.TabIndex = 50;
             this.label5.Text = "=";
             // 
@@ -756,10 +799,11 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label6.Location = new System.Drawing.Point(864, 170);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(33, 33);
+            this.label6.Size = new System.Drawing.Size(41, 42);
             this.label6.TabIndex = 51;
             this.label6.Text = "=";
             this.label6.Click += new System.EventHandler(this.label6_Click);
@@ -768,29 +812,33 @@
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(864, 89);
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label7.Location = new System.Drawing.Point(859, 89);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(42, 33);
+            this.label7.Size = new System.Drawing.Size(41, 42);
             this.label7.TabIndex = 52;
-            this.label7.Text = "= ";
+            this.label7.Text = "=";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(884, 87);
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label8.Location = new System.Drawing.Point(887, 87);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(31, 33);
+            this.label8.Size = new System.Drawing.Size(38, 42);
             this.label8.TabIndex = 53;
             this.label8.Text = "↓";
             // 
             // TituloRonda
             // 
             this.TituloRonda.AutoSize = true;
+            this.TituloRonda.BackColor = System.Drawing.Color.Transparent;
             this.TituloRonda.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TituloRonda.Location = new System.Drawing.Point(373, 29);
+            this.TituloRonda.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.TituloRonda.Location = new System.Drawing.Point(393, 65);
             this.TituloRonda.Name = "TituloRonda";
             this.TituloRonda.Size = new System.Drawing.Size(114, 33);
             this.TituloRonda.TabIndex = 54;
@@ -800,32 +848,37 @@
             // lblRondaActual
             // 
             this.lblRondaActual.AutoSize = true;
+            this.lblRondaActual.BackColor = System.Drawing.Color.Transparent;
             this.lblRondaActual.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRondaActual.Location = new System.Drawing.Point(476, 32);
+            this.lblRondaActual.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.lblRondaActual.Location = new System.Drawing.Point(500, 65);
             this.lblRondaActual.Name = "lblRondaActual";
             this.lblRondaActual.Size = new System.Drawing.Size(32, 33);
             this.lblRondaActual.TabIndex = 55;
             this.lblRondaActual.Text = "1";
             this.lblRondaActual.Click += new System.EventHandler(this.lblRondaActual_Click);
             // 
-            // pictureBox1
+            // imgSalir
             // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(881, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(40, 39);
-            this.pictureBox1.TabIndex = 56;
-            this.pictureBox1.TabStop = false;
+            this.imgSalir.BackColor = System.Drawing.Color.Transparent;
+            this.imgSalir.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("imgSalir.BackgroundImage")));
+            this.imgSalir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.imgSalir.Location = new System.Drawing.Point(881, 3);
+            this.imgSalir.Name = "imgSalir";
+            this.imgSalir.Size = new System.Drawing.Size(40, 39);
+            this.imgSalir.TabIndex = 56;
+            this.imgSalir.TabStop = false;
+            this.imgSalir.Click += new System.EventHandler(this.imgSalir_Click);
             // 
             // FormPartida
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(933, 511);
             this.ControlBox = false;
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.imgSalir);
             this.Controls.Add(this.lblRondaActual);
             this.Controls.Add(this.TituloRonda);
             this.Controls.Add(this.label8);
@@ -894,8 +947,7 @@
             this.Name = "FormPartida";
             this.Text = "Partida";
             this.Load += new System.EventHandler(this.FormPartida_Load);
-            this.MouseEnter += new System.EventHandler(this.FormPartida_MouseEnter);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgSalir)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -968,6 +1020,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label TituloRonda;
         private System.Windows.Forms.Label lblRondaActual;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox imgSalir;
     }
 }

@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="formInstrucciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formInstrucciones.Designer.cs">
+      <DependentUpon>formInstrucciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formPuntajes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formPuntajes.Designer.cs">
+      <DependentUpon>formPuntajes.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormRegistro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +79,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="formInstrucciones.resx">
+      <DependentUpon>formInstrucciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formPuntajes.resx">
+      <DependentUpon>formPuntajes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormRegistro.resx">
       <DependentUpon>FormRegistro.cs</DependentUpon>
     </EmbeddedResource>
@@ -119,6 +137,39 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\leopardo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\standard_background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Columna.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pareja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iguales.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diferentes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restart_icon_227406.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restart_icon_135251.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flecha_inclinada.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_1132.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restart_alert_icon_138242.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

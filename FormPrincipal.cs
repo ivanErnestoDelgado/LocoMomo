@@ -35,5 +35,19 @@ namespace LocoMomo
         {
             Application.Exit();
         }
+
+        private void imgRecords_Click(object sender, EventArgs e)
+        {
+            formPuntajes formularioPuntajes = new formPuntajes(this);
+            formularioPuntajes.Show();
+            this.Hide();
+        }
+
+        private void imgInstrucciones_Click(object sender, EventArgs e)
+        {
+            formInstrucciones formularioInstrucciones = new formInstrucciones(this);
+            formularioInstrucciones.Show();
+            this.Hide();
+        }
     }
 }

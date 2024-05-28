@@ -43,5 +43,10 @@ namespace LocoMomo
         }
 
         bool textoEsValido() => textNombre.Text.Length <= 15 && textNombre.Text.Length > 0;
+
+        private void formRegistro_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

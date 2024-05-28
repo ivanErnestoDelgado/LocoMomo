@@ -46,6 +46,7 @@ namespace LocoMomo
             this.ficheroAnimalesReparticion = new ficheroReparticion();
             this.tableroPrincipalJuego = new tableroPrincipal(generarFichasIniciales());
             this.rondaActual = 1;
+            posicionFichaCapturadaSeleccionada = -1;
         }
         void iniciarFlechasTableroPuntaje() {
             flechasTableroPuntaje = new List<Label>
@@ -147,7 +148,7 @@ namespace LocoMomo
 
         void DespintarPanelEspecifico(Panel PanelEscogido) {
             PanelEscogido.BackgroundImage = null;
-            PanelEscogido.BackColor = Color.Empty;
+            PanelEscogido.BackColor = Color.Transparent;
         }
         void PintarPanelEspecifico(fichaAnimal fichaRecibida, Panel panelAActualizar)
         {
@@ -509,6 +510,15 @@ namespace LocoMomo
         private void lblRondaActual_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void imgSalir_Click(object sender, EventArgs e)
+        {
+            DialogResult resultado = MessageBox.Show("¿Estas seguro que deseas salir?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (resultado == DialogResult.Yes) { 
+            formPrincipal.Show();
+            this.Close();
+            }
         }
     }
 }
